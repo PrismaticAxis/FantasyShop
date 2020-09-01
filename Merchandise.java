@@ -1,14 +1,25 @@
-
+/**
+ * The abstract class for all items in the shop.
+ * 
+ *	@author Stephen Lovell
+ *	@since	01 Sep 2020
+ */
 public abstract class Merchandise
 {
 	private String name;
 	private int cost;
-	
+	private String longDescription;
 	
 	
 	public Merchandise()
 	{
-		
+		this("", 0);
+	}
+	
+	public Merchandise(String name, int cost)
+	{
+		setName(name);
+		setCost(cost);
 	}
 	
 	
@@ -33,7 +44,13 @@ public abstract class Merchandise
 		this.cost = cost;
 	}
 	
+	public String getLongDescription()
+	{
+		return longDescription;
+	}
 	
-	
-	public void getLongDescription(){}
+	public void setLongDescription(String description)
+	{
+		longDescription = description;
+	}
 }
