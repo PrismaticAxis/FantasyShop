@@ -7,7 +7,8 @@
 public class Player
 {
 	private int funds;
-	private Merchandise[] inventory;
+	public Merchandise[] inventory;
+	public int itemsInInventory;
 	
 	
 	
@@ -19,7 +20,8 @@ public class Player
 	//needs initialization values
 	public Player(int funds, int inventorySize)
 	{
-		
+		setFunds(funds);
+		inventory = new Merchandise[inventorySize];
 	}
 	
 	
