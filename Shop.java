@@ -12,36 +12,66 @@ public class Shop
 	//needs initial values
 	static Player player = new Player();
 	
-	public static void main(String[] args)
+	public static void main(String[] args) throws FileNotFoundException
 	{
-		Scanner input = new Scanner(System.in);
-		
-		printMainMenu();
-		String choice = input.next();
+		Armor[] armor = stockArmor();
+		mainMenu();
 	}
 	
-	public static void printMainMenu()
+	public static void mainMenu()
 	{
-		
-		System.out.println("x)\t[Exit]");
-		System.out.println("h)\t[Help]");
-		System.out.println("i)\t[View Inventory]");
-		System.out.println();
-		
-		for (int i = 0; i < CATEGORIES.length; i++)
+		try
 		{
-			System.out.print(i + 1);
-			System.out.print(")\t");
-			System.out.print(CATEGORIES[i]);
+			Scanner input = new Scanner(System.in);
+			
+			System.out.println("x)\t[Exit]");
+			System.out.println("h)\t[Help]");
+			System.out.println("i)\t[View Inventory]");
 			System.out.println();
+			
+			for (int i = 0; i < CATEGORIES.length; i++)
+			{
+				System.out.print(i + 1);
+				System.out.print(")\t");
+				System.out.print(CATEGORIES[i]);
+				System.out.println();
+			}
+			
+			System.out.println();
+			System.out.println(
+					"[Funds: " + SILVER + player.getFunds() + ']');
+			
+			System.out.println();
+			System.out.println(">");
+			
+			String choice = input.next();
+			switch (choice)
+			{
+			case "x":
+				break;
+			case "h":
+				break;
+			case "i":
+				break;
+			case "1":	//Armor
+				break;
+			case "2":	//Weapons
+				break;
+			case "3":	//Kits
+				break;
+			case "4":	//Potions
+				break;
+			case "5":	//Misc
+				break;
+			default:
+				throw new Exception("\nInvalid input\n");
+			}
 		}
-		
-		System.out.println();
-		System.out.println(
-				"[Funds: " + SILVER + player.getFunds() + ']');
-		
-		System.out.println();
-		System.out.println(">");
+		catch (Exception e)
+		{
+			System.out.println(e.getMessage());
+			mainMenu();
+		}
 	}
 	
 	//to do: fill in long descriptions
