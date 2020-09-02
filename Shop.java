@@ -5,19 +5,27 @@ import java.util.Scanner;
 public class Shop
 {
 
+	final static char SILVER = '\u00A7';
+	final static String[] CATEGORIES = 
+		{"Armor", "Weapons", "Kits", "Potions", "Miscellaneous"};
+	
+	//needs initial values
+	static Player player = new Player();
+	
 	public static void main(String[] args)
 	{
-		final char SILVER = '\u00A7';
-		final String[] CATEGORIES = 
-			{"Armor", "Weapons", "Kits", "Potions", "Miscellaneous"};
-		
-		//needs initial values
-		Player player = new Player();
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("  x)\t[Exit]");
-		System.out.println("  h)\t[Help]");
-		System.out.println("inv)\t[View Inventory]");
+		printMainMenu();
+		String choice = input.next();
+	}
+	
+	public static void printMainMenu()
+	{
+		
+		System.out.println("x)\t[Exit]");
+		System.out.println("h)\t[Help]");
+		System.out.println("i)\t[View Inventory]");
 		System.out.println();
 		
 		for (int i = 0; i < CATEGORIES.length; i++)
@@ -31,8 +39,12 @@ public class Shop
 		System.out.println();
 		System.out.println(
 				"[Funds: " + SILVER + player.getFunds() + ']');
+		
+		System.out.println();
+		System.out.println(">");
 	}
 	
+	//to do: fill in long descriptions
 	public static Armor[] stockArmor() throws FileNotFoundException
 	{
 		int items = 6;
