@@ -7,17 +7,16 @@
 public class Player
 {
 	private int funds;
-	public Merchandise[] inventory;
-	public int itemsInInventory;
+	protected Merchandise[] inventory;
+	protected int itemsInInventory;
 	
 	
 	
 	public Player()
 	{
-		
+		this(5000, 30);
 	}
 	
-	//needs initialization values
 	public Player(int funds, int inventorySize)
 	{
 		setFunds(funds);
@@ -35,4 +34,29 @@ public class Player
 	{
 		funds = amount;
 	}
+	
+	public boolean hasEnoughFunds(Merchandise item)
+	{
+		return funds >= item.getCost();
+	}
+	
+	public void buy(Merchandise item)
+	{
+			funds = funds - item.getCost();
+			inventory[itemsInInventory] = item;
+			itemsInInventory++;
+	}
+	
+	public void sell(int index)
+	{
+		inventory[index] = null;
+		itemsInInventory--;
+		while (index < itemsInInventory)
+		{
+			index++;
+			inventory[index - 1] = inventory[index];
+		}
+		inventory[itemsInInventory] = null;
+	}
+	
 }
