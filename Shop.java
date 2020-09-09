@@ -11,6 +11,8 @@ public class Shop
 	
 	static Player player = new Player();
 	
+	
+	
 	public static void main(String[] args) throws FileNotFoundException
 	{
 		mainMenu();
@@ -185,12 +187,11 @@ public class Shop
 			switch (choice)
 			{
 			case "y":
-				System.out.println(
-					"Thank you for shopping.\nGood luck on your adventure!");
+				System.out.println("Thank you for shopping.\n"
+						+ "Good luck on your adventure!");
 				System.exit(0);
 			case "n":
 				mainMenu();
-				break;
 			default:
 				throw new Exception("Invalid input");
 			}
@@ -882,43 +883,45 @@ public class Shop
 		}
 		
 		armor[0].setLongDescription(
-				"Made from layers of thick cloth and padding, "
-				+ "this armor is surprisingly effective when you don't "
-				+ "have access to the stronger stuff.");
+				"Made from layers of thick cloth and padding,\n"
+				+ "this armor is surprisingly effective when you\n"
+				+ "don't have access to the stronger stuff.");
 		armor[1].setLongDescription(
-				"Imported armor made from the scaly hides of a species "
-				+ "of giant lizard from the Sorovali deserts to the "
-				+ "south. Not as protective as metal armor, but rather "
-				+ "stylish (depending on who you ask), and can usually "
-				+ "get the job done. Comes in several colors.");
+				"Imported armor made from the scaly hides of a\n"
+				+ "species of giant lizard from the Sorovali deserts\n"
+				+ "to the south. Not as protective as metal armor,\n"
+				+ "but rather stylish (depending on who you ask), and\n"
+				+ "can usually get the job done.");
 		armor[2].setLongDescription(
-				"Made of many tiny, interlocking metal rings, mail "
-				+ "provides excellent protection from sharp edges, and "
-				+ "generally good defense all around, especially if "
+				"Made of many tiny, interlocking metal rings, mail\n"
+				+ "provides excellent protection from sharp edges, and\n"
+				+ "generally good defense all around, especially if\n"
 				+ "you can't afford the steep prices of full plate.");
 		armor[3].setLongDescription(
-				"Don't let the cloth-like exterior fool you. This armor "
-				+ "is actually composed of segmented metal plates, "
-				+ "riveted to a firm cloth exterior. While still falling "
-				+ "a bit shy of the protection offered by full plate, "
-				+ "brigandine will still help you keep your innards "
-				+ "where they're supposed to be, and look good doing it.");
+				"Don't let the cloth-like exterior fool you. This\n"
+				+ "armor is actually composed of segmented metal\n"
+				+ "plates, riveted to a firm cloth exterior. While\n"
+				+ "still falling a bit shy of the protection offered\n"
+				+ "by full plate, brigandine will still help you\n"
+				+ "keep your innards where they're supposed to be,\n"
+				+ "and look good doing it.");
 		armor[4].setLongDescription(
-				"Composed of large pieces of solid metal, this armor is "
-				+ "phenomenally good at keeping nasty pointy things out "
-				+ "of your body. Sturdy construction, an intimidating "
-				+ "look, and a hefty price tag are what you can expect "
-				+ "of armor of this caliber.");
+				"Composed of large pieces of solid metal, this armor\n"
+				+ "is phenomenally good at keeping nasty pointy\n"
+				+ "things out of your body. Sturdy construction, an\n"
+				+ "intimidating look, and a hefty price tag are what\n"
+				+ "you can expect of armor of this caliber.");
 		armor[5].setLongDescription(
-				"A beautiful and intimidating suit of what other nations "
-				+ "might call 'enchanted armor,' this gloriously "
-				+ "practical work of art is made from the rare and "
-				+ "expensive metal lumite. As long as you can keep it "
-				+ "infused with Elmarian ink, it'll prove itself stronger "
-				+ "and far lighter than steel. Some say they've even "
-				+ "noticed an increase in strength and mobility while "
-				+ "wearing it. Make sure you keep it infused, though; "
-				+ "without ink, the metal is brittle and heavy.");
+				"A beautiful and intimidating suit of what other\n"
+				+ "nations might call 'enchanted armor,' this\n"
+				+ "gloriously practical work of art is made from the\n"
+				+ "rare and expensive metal lumite. As long as you can\n"
+				+ "keep it infused with Elmarian ink, it'll prove\n"
+				+ "stronger and far lighter than steel. Some say\n"
+				+ "they've even noticed an increase in strength and\n"
+				+ "mobility while wearing it. Make sure you keep it\n"
+				+ "infused, though; without ink, the metal is brittle\n"
+				+ "and heavy.");
 		
 		return armor;
 	}
