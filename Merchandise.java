@@ -1,10 +1,10 @@
 /**
- * The abstract class for all items in the shop.
+ * The catch-all class for all items in the shop.
  * 
  *	@author Stephen Lovell
  *	@since	01 Sep 2020
  */
-public abstract class Merchandise
+public class Merchandise
 {
 	private String name;
 	private int cost;
