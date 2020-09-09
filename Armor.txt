@@ -1,0 +1,12 @@
+Gambeson
+3 50 -
+Scale Armor
+4 200 -
+Chain Mail
+6 750 -
+Brigandine
+7 1000 -
+Plate Armor
+9 2000 -
+Lumite Plate
+11 4000 -

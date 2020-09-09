@@ -1,0 +1,16 @@
+Climber's Kit
+250
+Disguise Kit
+250
+Forgery Kit
+150
+Healer's Kit
+50
+Herbalism Kit
+50
+Navigator's Kit
+250
+Poisoner's Kit
+500
+Thief's Kit
+250

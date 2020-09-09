@@ -1,0 +1,68 @@
+Acid (vial)
+150
+Alchemist's Fire (vial)
+375
+Antitoxin (vial)
+150
+Candle
+1
+Hunting Trap
+50
+Ink Flask (Red)
+150
+Ink Flask (Yellow)
+150
+Ink Flask (Green)
+150
+Ink Flask (Cyan)
+150
+Ink Flask (Blue)
+150
+Ink Flask (Purple)
+150
+Ink Flask (Silver)
+225
+Ink Flask (Empty)
+15
+Inkweaver Brush
+200
+Lantern (bullseye)
+100
+Lantern (hooded)
+50
+Lantern Oil
+2
+Lucky Charm
+50
+Miner's Pick
+20
+Poison (vial)
+250
+Quiver
+10
+Rations (1 day)
+5
+Rope
+25
+Shield (Wooden)
+75
+Shield (Ghostwood)
+120
+Shield (Steel)
+200
+Shield (Lumite)
+700
+Signal Whistle
+2
+Spellbook
+650
+Spyglass
+500
+Tent (two-person)
+20
+Torch
+3
+Vial
+10
+Waterskin
+2

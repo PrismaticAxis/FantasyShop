@@ -1,0 +1,60 @@
+Billhook
+10 200 Melee
+Dagger
+4 20 Melee
+Falchion
+7 250 Melee
+Glaive
+10 200 Melee
+Greataxe
+12 300 Melee
+Greatsword
+12 400 Melee
+Halberd
+10 200 Melee
+Handaxe
+6 50 Melee
+Longsword
+9 150 Melee
+Mace
+6 50 Melee
+Maul
+11 100 Melee
+Morningstar
+8 150 Melee
+Pike
+10 50 Melee
+Poleaxe
+10 180 Melee
+Quarterstaff
+5 10 Melee
+Rapier
+7 250 Melee
+Shortsword
+6 100 Melee
+Spear
+7 20 Melee
+War Pick
+9 50 Melee
+War Scythe
+8 50 Melee
+Warhammer
+9 150 Melee
+Crossbow
+11 500 Ranged
+Shortbow
+9 250 Ranged
+Sling
+5 2 Ranged
+Throwing Axe
+6 10 Ranged
+Throwing Knife
+4 10 Ranged
+Warbow
+12 500 Ranged
+Arrows (20)
+0 10 N/A
+Bolts (20)
+0 10 N/A
+Sling Ammo (20)
+0 1 N/A

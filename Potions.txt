@@ -1,0 +1,20 @@
+Clawspike Potion
+375 Sprouts claws from your knuckles to use as unexpected weapons
+Cognizance Potion
+425 Speeds up your awareness, viewing the world in slow motion
+Defense Potion
+375 Creates a thin field around you that deflects blows
+Gravity Potion
+400 Allows you to alter your personal gravity
+Healing Potion
+375 Augments your body's healing ability
+Invisibility Potion
+425 Makes you nearly invisible
+Plantwalk Potion
+400 Causes nearby plantlife to act favorably toward you
+Speed Potion
+425 Allows you to move blurringly quickly in short bursts
+Strength Potion
+375 Augments your strength
+Watertread Potion
+400 Allows you to walk on water
