@@ -1143,14 +1143,22 @@ public class Shop
 			kits[i] = new Kit(name, cost);
 		}
 		
-		kits[0].setLongDescription("");
-		kits[1].setLongDescription("");
-		kits[2].setLongDescription("");
-		kits[3].setLongDescription("");
-		kits[4].setLongDescription("");
-		kits[5].setLongDescription("");
-		kits[6].setLongDescription("");
-		kits[7].setLongDescription("");
+		kits[0].setLongDescription(
+			"");
+		kits[1].setLongDescription(
+			"");
+		kits[2].setLongDescription(
+			"");
+		kits[3].setLongDescription(
+			"");
+		kits[4].setLongDescription(
+			"");
+		kits[5].setLongDescription(
+			"");
+		kits[6].setLongDescription(
+			"");
+		kits[7].setLongDescription(
+			"");
 		
 		return kits;
 	}
@@ -1173,26 +1181,94 @@ public class Shop
 			potions[i] = new Potion(name, 4, cost, descript);
 		}
 		
-		potions[0].setLongDescription(
-			"");
-		potions[1].setLongDescription(
-			"");
-		potions[2].setLongDescription(
-			"");
-		potions[3].setLongDescription(
-			"");
-		potions[4].setLongDescription(
-			"");
-		potions[5].setLongDescription(
-			"");
-		potions[6].setLongDescription(
-			"");
-		potions[7].setLongDescription(
-			"");
-		potions[8].setLongDescription(
-			"");
-		potions[9].setLongDescription(
-			"");
+		potions[0].setLongDescription( //Clawspike
+			"A red-ink-based potion that enables you to produce\n"
+			+ "and retract claws from your knuckles for a time. The\n"
+			+ "glowing red claws (though red and green inkweavers\n"
+			+ "have been known to be able to alter the color) are\n"
+			+ "strong, a little more so than steel, making them a\n"
+			+ "dangerous surprise weapon in the right circumstance.");
+		potions[1].setLongDescription( //Cognizance
+			"This cyan-ink-based potion speeds up your awareness,\n"
+			+ "allowing you to view the world around you in slow\n"
+			+ "motion. While you can't move noticeably faster in this\n"
+			+ "state, and the experience can take some getting used\n"
+			+ "to, the effective extra time to think can prove a huge\n"
+			+ "advantage in scenarios where adrenaline is running\n"
+			+ "high.");
+		potions[2].setLongDescription( //Defense
+			"Crafted from blue ink, this potion creates an ooze-like\n"
+			+ "field around you that moves with you and absorbs\n"
+			+ "outside force, granting you unparalleled protection.\n"
+			+ "Be warned, however, that other ink-based capabilities,\n"
+			+ "such as the claws produced by our clawspike potion,\n"
+			+ "have a much easier time of penetrating the field, so\n"
+			+ "keep your guard up.");
+		potions[3].setLongDescription( //Gravity
+			"Also called a flight potion by many, this cyan-ink-based\n"
+			+ "potion grants you the ability to alter the direction\n"
+			+ "and strength of gravity pulling on you. This gives\n"
+			+ "you an incredible amount of freedom of movement, but\n"
+			+ "be warned: the experience can be extremely\n"
+			+ "disorienting. The medical center just down the street\n"
+			+ "has had to treat more than a few broken bones from\n"
+			+ "people getting carried away with these things.");
+		potions[4].setLongDescription( //Healing
+			"You ever stop to think about how amazing it is that our\n"
+			+ "bodies can fix themselves when we get hurt? This green-\n"
+			+ "ink-based potion takes that concept and augments it,\n"
+			+ "allowing you to rapidly heal from any injury that your\n"
+			+ "body would normally be able to recover from, plus a\n"
+			+ "few that it couldn't if you catch them quickly enough.");
+		potions[5].setLongDescription( //Invisibility
+			"A cyan-ink-based potion that turns you nearly invisible.\n"
+			+ "You'll appear as basically a human-shaped distortion\n"
+			+ "in the air (except for part of your eyes; otherwise\n"
+			+ "you wouldn't be able to see anything yourself).\n"
+			+ "Disclaimer: this shop does not accept responsibility\n"
+			+ "for any criminal acts its patrons may choose to become\n"
+			+ "involved in through use of the invisibility potions.\n"
+			+ "Be stupid at your own risk.");
+		potions[6].setLongDescription( //Plantwalk
+			"This one is ... difficult to explain, and even harder to\n"
+			+ "accurately predict the effects of. Made from yellow\n"
+			+ "ink, the plantwalk potion causes nearby plants to ...\n"
+			+ "do things for you. This ranges from thick plant growth\n"
+			+ "pulling out of the way for you to vines assisting you\n"
+			+ "in climbing to even letting you sort of step into one\n"
+			+ "and emerge from another several hundred feet away.\n"
+			+ "It's rather odd, and you don't really 'control' them;\n"
+			+ "plants just seem to pick up on your intentions, and\n"
+			+ "may help you achieve those intentions.");
+		potions[7].setLongDescription( //Speed
+			"Made from red ink, this is another potion that tends to\n"
+			+ "get people injured. It enables you to move with sudden\n"
+			+ "bursts of speed, an enormous advantage depending on the\n"
+			+ "situation. I haven't ever used one of these myself, but\n"
+			+ "people tell me that it can be ... difficult to control,\n"
+			+ "and more than a few have run headlong into walls,\n"
+			+ "trees, or other hard objects, and I've heard several\n"
+			+ "cases of people knocking themselves out in similar\n"
+			+ "fashion. Even heard one case of someone accidentally\n"
+			+ "burst-of-speeding right off a cliff, though that\n"
+			+ "shouldn't be the case if you're careful. Probably.");
+		potions[8].setLongDescription( //Strength
+			"Crafted from blue ink, this potion does exactly what the\n"
+			+ "name implies: grants you incredible strength for a\n"
+			+ "short time. Before you get too excited, the\n"
+			+ "augmentation is in fact visible to outside observers\n"
+			+ "(in a similar manner to the defense potion), so any\n"
+			+ "attempts to use this to impress people with your\n"
+			+ "amazing muscles will likely be met with a healthy dose\n"
+			+ "of skepticism.");
+		potions[9].setLongDescription( //Watertread
+			"A fairly new development in the potions industry, this\n"
+			+ "blue ink-based potion grants you the ability to walk\n"
+			+ "on water (and other liquid surfaces as I understand\n"
+			+ "it) for a short time. The potion makers claim it may\n"
+			+ "also grant the power to breath underwater, but this\n"
+			+ "is so far unconfirmed, partially because testing it\n"
+			+ "can be ... challenging.");
 		
 		return potions;
 	}
@@ -1217,40 +1293,74 @@ public class Shop
 			System.out.println(merch[i].getCost());
 		}
 		
-		 merch[0].setLongDescription("");
-		 merch[1].setLongDescription("");
-		 merch[2].setLongDescription("");
-		 merch[3].setLongDescription("");
-		 merch[4].setLongDescription("");
-		 merch[5].setLongDescription("");
-		 merch[6].setLongDescription("");
-		 merch[7].setLongDescription("");
-		 merch[8].setLongDescription("");
-		 merch[9].setLongDescription("");
-		merch[10].setLongDescription("");
-		merch[11].setLongDescription("");
-		merch[12].setLongDescription("");
-		merch[13].setLongDescription("");
-		merch[14].setLongDescription("");
-		merch[15].setLongDescription("");
-		merch[16].setLongDescription("");
-		merch[17].setLongDescription("");
-		merch[18].setLongDescription("");
-		merch[19].setLongDescription("");
-		merch[20].setLongDescription("");
-		merch[21].setLongDescription("");
-		merch[22].setLongDescription("");
-		merch[23].setLongDescription("");
-		merch[24].setLongDescription("");
-		merch[25].setLongDescription("");
-		merch[26].setLongDescription("");
-		merch[27].setLongDescription("");
-		merch[28].setLongDescription("");
-		merch[29].setLongDescription("");
-		merch[30].setLongDescription("");
-		merch[31].setLongDescription("");
-		merch[32].setLongDescription("");
-		merch[33].setLongDescription("");
+		 merch[0].setLongDescription(
+			"");
+		 merch[1].setLongDescription(
+			"");
+		 merch[2].setLongDescription(
+			"");
+		 merch[3].setLongDescription(
+			"");
+		 merch[4].setLongDescription(
+			"");
+		 merch[5].setLongDescription(
+			"");
+		 merch[6].setLongDescription(
+			"");
+		 merch[7].setLongDescription(
+			"");
+		 merch[8].setLongDescription(
+			"");
+		 merch[9].setLongDescription(
+			"");
+		merch[10].setLongDescription(
+			"");
+		merch[11].setLongDescription(
+			"");
+		merch[12].setLongDescription(
+			"");
+		merch[13].setLongDescription(
+			"");
+		merch[14].setLongDescription(
+			"");
+		merch[15].setLongDescription(
+			"");
+		merch[16].setLongDescription(
+			"");
+		merch[17].setLongDescription(
+			"");
+		merch[18].setLongDescription(
+			"");
+		merch[19].setLongDescription(
+			"");
+		merch[20].setLongDescription(
+			"");
+		merch[21].setLongDescription(
+			"");
+		merch[22].setLongDescription(
+			"");
+		merch[23].setLongDescription(
+			"");
+		merch[24].setLongDescription(
+			"");
+		merch[25].setLongDescription(
+			"");
+		merch[26].setLongDescription(
+			"");
+		merch[27].setLongDescription(
+			"");
+		merch[28].setLongDescription(
+			"");
+		merch[29].setLongDescription(
+			"");
+		merch[30].setLongDescription(
+			"");
+		merch[31].setLongDescription(
+			"");
+		merch[32].setLongDescription(
+			"");
+		merch[33].setLongDescription(
+			"");
 		
 		return merch;
 	}
