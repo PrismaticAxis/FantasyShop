@@ -542,13 +542,16 @@ public class Shop
 				+ ". Sound good? (y/n)");
 			System.out.println(
 				"\t\t[Funds: " + SILVER + player.getFunds() + ']');
-			System.out.println(">");
+			System.out.print(">");
 			
 			String choice = input.next();
 			switch (choice)
 			{
 			case "b":
-				kitMenu();
+				if (item instanceof Kit)
+					kitMenu();
+				else
+					miscMenu();
 			case "x":
 				exit();
 			case "h":
@@ -572,7 +575,10 @@ public class Shop
 					viewDetailsInShop(item);
 				}
 			case "n":
-				kitMenu();
+				if (item instanceof Kit)
+					kitMenu();
+				else
+					miscMenu();
 			default:
 				throw new Exception("Invalid input");
 			}
@@ -601,7 +607,7 @@ public class Shop
 				+ ". Sound good? (y/n)");
 			System.out.println(
 				"\t\t[Funds: " + SILVER + player.getFunds() + ']');
-			System.out.println(">");
+			System.out.print(">");
 			
 			String choice = input.next();
 			switch (choice)
@@ -658,7 +664,7 @@ public class Shop
 				+ ". Sound good? (y/n)");
 			System.out.println(
 				"\t\t[Funds: " + SILVER + player.getFunds() + ']');
-			System.out.println(">");
+			System.out.print(">");
 			
 			String choice = input.next();
 			switch (choice)
@@ -713,7 +719,7 @@ public class Shop
 				+ ". Are you sure? (y/n)");
 			System.out.println(
 				"\t\t[Funds: " + SILVER + player.getFunds() + ']');
-			System.out.println(">");
+			System.out.print(">");
 			
 			String choice = input.next();
 			
@@ -778,7 +784,7 @@ public class Shop
 				System.out.println("(Enter item number to view details)");
 			}
 			
-			System.out.println(">");
+			System.out.print(">");
 			
 			String choice = input.next();
 			switch (choice)
@@ -1308,78 +1314,188 @@ public class Shop
 			String blank = input.nextLine();
 			
 			merch[i] = new Merchandise(name, cost);
-			System.out.println(merch[i].getName());
-			System.out.println(merch[i].getCost());
 		}
 		
-		 merch[0].setLongDescription(
-			"");
-		 merch[1].setLongDescription(
-			"");
-		 merch[2].setLongDescription(
-			"");
-		 merch[3].setLongDescription(
-			"");
-		 merch[4].setLongDescription(
-			"");
-		 merch[5].setLongDescription(
-			"");
-		 merch[6].setLongDescription(
-			"");
-		 merch[7].setLongDescription(
-			"");
-		 merch[8].setLongDescription(
-			"");
-		 merch[9].setLongDescription(
-			"");
-		merch[10].setLongDescription(
-			"");
-		merch[11].setLongDescription(
-			"");
-		merch[12].setLongDescription(
-			"");
-		merch[13].setLongDescription(
-			"");
-		merch[14].setLongDescription(
-			"");
-		merch[15].setLongDescription(
-			"");
-		merch[16].setLongDescription(
-			"");
-		merch[17].setLongDescription(
-			"");
-		merch[18].setLongDescription(
-			"");
-		merch[19].setLongDescription(
-			"");
-		merch[20].setLongDescription(
-			"");
-		merch[21].setLongDescription(
-			"");
-		merch[22].setLongDescription(
-			"");
-		merch[23].setLongDescription(
-			"");
-		merch[24].setLongDescription(
-			"");
-		merch[25].setLongDescription(
-			"");
-		merch[26].setLongDescription(
-			"");
-		merch[27].setLongDescription(
-			"");
-		merch[28].setLongDescription(
-			"");
-		merch[29].setLongDescription(
-			"");
-		merch[30].setLongDescription(
-			"");
-		merch[31].setLongDescription(
-			"");
-		merch[32].setLongDescription(
-			"");
-		merch[33].setLongDescription(
-			"");
+		 merch[0].setLongDescription( //acid
+			"A vial of acid, useful for dissolving material. You\n"
+			+ "could also use it as an improvised weapon in a pinch,\n"
+			+ "especially if you ever encounter one of those rock\n"
+			+ "monsters that people talk about. Personally, I don't\n"
+			+ "know that they actually exist, but hey, if you ever\n"
+			+ "do run into one, I suppose you'll be glad to have\n"
+			+ "this on hand. Do not drink. Seriously, you'd be\n"
+			+ "surprised how many idiots I have to explain that to.");
+		 merch[1].setLongDescription( //alchemist's fire
+			"Contrary to what people say, this is not technically a\n"
+			+ "potion (part of the definition of a potion, according\n"
+			+ "to the Apothecary Association, is that it contains\n"
+			+ "at least one form of Elmarian ink). What you've got\n"
+			+ "here is a chemical that explodes when it comes into\n"
+			+ "contact with air (hence the extensive packaging).\n"
+			+ "Handle with extreme care, and please, for the love of\n"
+			+ "all that is holy, DO NOT ATTEMPT TO DRINK!");
+		 merch[2].setLongDescription( //antitoxin
+			"A general-purpose counteragent for poisonous substances.\n"
+			+ "While it's not guaranteed to work against any and\n"
+			+ "every form of poison out there, if the situation\n"
+			+ "arises where you need antitoxin, you'll be very glad\n"
+			+ "that you have it.");
+		 merch[3].setLongDescription( //candle
+			"Basically a wax-covered string that you light on fire\n"
+			+ "to provide light. Come on, you know what a candle is.");
+		 merch[4].setLongDescription( //hunting trap
+			"A vicious steel, jawlike trap used for ensnaring larger\n"
+			+ "animals. Exercise caution when using it. The trap is\n"
+			+ "dangerous, yes, but so are a lot of the animals you\n"
+			+ "could potentially snare with it. Worst of all though\n"
+			+ "will be any druids and or animal rights activists who\n"
+			+ "discover you're using one.");
+		 merch[5].setLongDescription( //red ink
+			"A flask of red Elmarian ink, the fuel for a red\n"
+			+ "inkweaver's magic, things like bursts of speed or\n"
+			+ "conjuring spiky projectiles.");
+		 merch[6].setLongDescription( //yellow ink
+			"A flask of yellow Elmarian ink, the fuel for a yellow\n"
+			+ "inkweaver's magic, things like plant manipulation\n"
+			+ "and emotional flaring.");
+		 merch[7].setLongDescription( //green ink
+			"A flask of green Elmarian ink, the fuel for a green\n"
+			+ "inkweaver's magic, things like healing and illusions.");
+		 merch[8].setLongDescription( //cyan ink
+			"A flask of cyan Elmarian ink, the fuel for a cyan\n"
+			+ "inkweaver's magic, things like electricity\n"
+			+ "manipulation and enhanced awareness.");
+		 merch[9].setLongDescription( //blue ink
+			"A flask of blue Elmarian ink, the fuel for a blue\n"
+			+ "inkweaver's magic, things like walking on water or\n"
+			+ "rock manipulation.");
+		merch[10].setLongDescription( //purple ink
+			"A flask of purple Elmarian ink, the fuel for a purple\n"
+			+ "inkweaver's magic, things like.... Actually, I don't\n"
+			+ "really know much about purple inkweaving. I've heard\n"
+			+ "of manipulating friction or something? I don't know;\n"
+			+ "purple ink is weird.");
+		merch[11].setLongDescription( //silver ink
+			"A flask of silver Elmarian ink, the fuel for a silver\n"
+			+ "inkweaver's magic. People who can extract and use\n"
+			+ "silver ink are rare, and I don't know much about it,\n"
+			+ "but I understand that there's little you can't do\n"
+			+ "with it if you know what you're doing.");
+		merch[12].setLongDescription( //empty ink flask
+			"A specialized flask for storing Elmarian ink such that\n"
+			+ "the ink retains its potency for as long as possible.\n"
+			+ "If you're an inkweaver, it's always useful to have a\n"
+			+ "few of these around so you can extract your own ink.");
+		merch[13].setLongDescription( //inkweaver brush
+			"Even though inkweaving can be done by hand easily\n"
+			+ "enough (and many do), these brushes allow for much\n"
+			+ "finer control and facilitate channeling the ink's\n"
+			+ "power.");
+		merch[14].setLongDescription( //bullseye lantern
+			"A lantern with a lens for focusing the light in a single\n"
+			+ "bright beam. Comes with enough oil for about six hours\n"
+			+ "of light.");
+		merch[15].setLongDescription( //hooded lantern
+			"A reliable, general purpose light source, shielded from\n"
+			+ "the elements by a glass casing. Comes with enough oil\n"
+			+ "for about six hours of light.");
+		merch[16].setLongDescription( //lantern oil
+			"A flask of fuel for a lantern, good for about six hours\n"
+			+ "of burning.");
+		merch[17].setLongDescription( //lucky charm
+			"I don't know if you're the superstitious type, but I've\n"
+			+ "had customers who swear by these things, saying that\n"
+			+ "things just seem to go right around them while\n"
+			+ "carrying one. I guess they only last a certain amount\n"
+			+ "of time, so if you find that the good luck stops\n"
+			+ "working.... Well, you know where to find me.");
+		merch[18].setLongDescription( //miner's pick
+			"Some people like to find their own raw material. If you\n"
+			+ "want to collect your own ore for metal goods, you'll\n"
+			+ "definitely want one of these.");
+		merch[19].setLongDescription( //poison
+			"For those who prefer a less direct approach to making\n"
+			+ "enemies dead, there's the time-tested tradition of\n"
+			+ "poisoning them. It's not really my style, but it's\n"
+			+ "here if you want it. DO NOT MIX THIS UP WITH YOUR\n"
+			+ "DRINKABLES. I shouldn't have to say that, but you'd\n"
+			+ "be surprised how many idiots put these with their\n"
+			+ "potions, claiming they'll remember, and then\n"
+			+ "strangely end up dead with no signs of outside\n"
+			+ "trauma and one of these half-empty vials lying\n"
+			+ "nearby.");
+		merch[20].setLongDescription( //quiver
+			"The arrow storage that comes with our bows will do\n"
+			+ "if you've got nothing else, but a good quiver can\n"
+			+ "be extremely handy. This one can fit upwards of 30\n"
+			+ "arrows.");
+		merch[21].setLongDescription( //rations
+			"A single day's worth of dried food for one grown man.\n"
+			+ "It's not tasty on its own by any means, but it'll last\n"
+			+ "a good long while, and people need to eat (you might\n"
+			+ "have noticed), so it's good to carry some of these\n"
+			+ "with you in case you can't acquire food by other\n"
+			+ "means. There are several varieties available, so take\n"
+			+ "your pick.");
+		merch[22].setLongDescription( //rope
+			"50 feet of good, sturdy rope. Not much else to say here.");
+		merch[23].setLongDescription( //wood shield
+			"A simple, but well built shield. It's sturdy, but sharp\n"
+			+ "metal weapons will take their toll on it over time, so\n"
+			+ "keep that in mind. Also keep it away from fire. I\n"
+			+ "don't know if you've noticed, but wood tends to burn\n"
+			+ "when exposed to fire.");
+		merch[24].setLongDescription( //ghostwood shield
+			"Despite the name, this shield is made from wood from the\n"
+			+ "strange, fireproof trees found in the area near the\n"
+			+ "Ghostwood up in the northern provinces, not from the\n"
+			+ "ghostwood trees themselves. With that said, this is a\n"
+			+ "good, sturdy wooden shield without the usual weakness\n"
+			+ "of being susceptible to fire.");
+		merch[25].setLongDescription( //steel shield
+			"A good, solid, metal shield. Very good at preventing\n"
+			+ "nasty things from inflicting bodily harm on you. You\n"
+			+ "know, In case you hadn't worked out what a shield is\n"
+			+ "for.");
+		merch[26].setLongDescription( //lumite shield
+			"A shield crafted from the rare metal lumite. It's far\n"
+			+ "lighter than steel, and considerably stronger. The\n"
+			+ "catch (aside from price): you have to keep it infused\n"
+			+ "with ink. Otherwise, the metal turns brittle and\n"
+			+ "heavy, making it somewhat useless as a shield. If\n"
+			+ "you're going to be using one of these, be sure to keep\n"
+			+ "plenty of ink with you.");
+		merch[27].setLongDescription( //signal whistle
+			"A simple whistle you can use to communicate with others\n"
+			+ "over distances. Not much else to be said here.");
+		merch[28].setLongDescription( //spellbook
+			"Some foreigners were actually the ones to come up with\n"
+			+ "the name 'spellbook.' I'm not sure what a 'spell' is,\n"
+			+ "but the name sort of caught on, and I just left it as\n"
+			+ "such. This is basically a textbook on inkweaving\n"
+			+ "theory. If you've got the mind for it, it can help\n"
+			+ "you refine your technique and become a better\n"
+			+ "inkweaver.");
+		merch[29].setLongDescription( //spyglass
+			"An ingenious little contraption that uses some fancy\n"
+			+ "lenses to allow you to see much farther than the\n"
+			+ "naked eye can.");
+		merch[30].setLongDescription( //tent
+			"A simple canvas tent, large enough to comfortably\n"
+			+ "accomodate two people. It definitely beats sleeping\n"
+			+ "out in the open (Unless you're into that sort of\n"
+			+ "thing, I suppose).");
+		merch[31].setLongDescription( //torch
+			"Essentially just a stick that you can light on fire to\n"
+			+ "provide light. Longer lasting and easier to manage\n"
+			+ "than a candle.");
+		merch[32].setLongDescription( //vial
+			"A glass container for storing things in. Pretty\n"
+			+ "straightforward.");
+		merch[33].setLongDescription( //waterskin
+			"A sturdy container for storing water (though I suppose\n"
+			+ "you could store other liquids in it if you really\n"
+			+ "wanted).");
 		
 		return merch;
 	}
