@@ -1125,7 +1125,6 @@ public class Shop
 		return weapons;
 	}
 
-	//incomplete (needs long descriptions)
 	public static Kit[] stockKits() throws FileNotFoundException
 	{
 		int items = 8;
@@ -1143,27 +1142,47 @@ public class Shop
 			kits[i] = new Kit(name, cost);
 		}
 		
-		kits[0].setLongDescription(
-			"");
-		kits[1].setLongDescription(
-			"");
-		kits[2].setLongDescription(
-			"");
-		kits[3].setLongDescription(
-			"");
-		kits[4].setLongDescription(
-			"");
-		kits[5].setLongDescription(
-			"");
-		kits[6].setLongDescription(
-			"");
-		kits[7].setLongDescription(
-			"");
+		kits[0].setLongDescription( //climber
+			"Contains climbing spikes, special boot tips, gloves,\n"
+			+ "a harness, and 50 feet of rope.");
+		kits[1].setLongDescription( //disguise
+			"Contains an assortment of cosmetics, hair dyes, articles\n"
+			+ "of clothing, and small props. Each kit is unique, so\n"
+			+ "be sure to have a look through the contents before\n"
+			+ "you buy. Unless you're feeling adventurous. Oh, look\n"
+			+ "at that: you're an adventurer, so you're probably\n"
+			+ "feeling exactly that! Am I right?");
+		kits[2].setLongDescription( //forgery
+			"Contains a variety of paper and parchment, quills,\n"
+			+ "various odds and ends for mimicking official seals,\n"
+			+ "and several types of ink. Er, the kind you write with,\n"
+			+ "not the stuff you use to fuel magic. And if anyone\n"
+			+ "asks, you did not get this kit here. I run a perfectly\n"
+			+ "legitimate business, thank you very much.");
+		kits[3].setLongDescription( //healer
+			"Contains bandages, medicines, splints. You know,\n"
+			+ "general first aid supplies.");
+		kits[4].setLongDescription( //herbalism
+			"Contains pouches and glass jars for storing herbs,\n"
+			+ "clippers and leather gloves for collecting them, and\n"
+			+ "a mortar and pestle.");
+		kits[5].setLongDescription( //navigator
+			"Contains a compass, a ruler, parchment and writing\n"
+			+ "implements, and a pair of calipers.");
+		kits[6].setLongDescription( //poisoner
+			"Contains a number of glass vials, a mortar and pestle,\n"
+			+ "a collection of chemicals, and a glass stirring rod.\n"
+			+ "Keep out of reach of children.");
+		kits[7].setLongDescription( //thief
+			"Contains a small file, a set of lock picks, a small\n"
+			+ "mirror, a pair of scissors, and a pair of pliers.\n"
+			+ "If anyone asks, you didn't get this here. This is a\n"
+			+ "legitimate business, and I wouldn't dream of\n"
+			+ "supplying explicitly criminal toolkits.");
 		
 		return kits;
 	}
 	
-	//incomplete (needs long descriptions)
 	public static Potion[] stockPotions() throws FileNotFoundException
 	{
 		int items = 10;
