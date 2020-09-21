@@ -10,8 +10,10 @@ All files are required (the text files specifically for stocking the merchandise
 ## Code Example
 This was my first time properly utilizing a Scanner to read from a file.
 Code like the following is what "stocks" items in the shop.
+
 '''
-    int items = 30;
+    
+		int items = 30;
 		Weapon[] weapons = new Weapon[items];
 		
 		File file = new File("src/Weapon.txt");
